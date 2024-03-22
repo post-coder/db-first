@@ -1,0 +1,25 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati 
+riguardanti delle auto usate messe in vendita da un concessionario
+
+
+macchine
+________
+
+id: SMALLINT, Primary Key, AUTO INCREMENT, UNIQUE, NOT NULL
+marca: VARCHAR(30), NOT NULL
+modello: VARCHAR(50), NOT NULL
+colore: VARCHAR(30), NOT NULL
+anno: YEAR, NOT NULL
+targa, VARCHAR(7), NULL, UNIQUE
+tipo_motore, VARCHAR(25)
+anno_immatricolazione: YEAR
+km: MEDIUMINT, NULL
+vin: VARCHAR(17), NULL
+condizioni: TEXT, NOT NULL
+classe_emissioni: VARCHAR(10), NULL
+carrozzeria: VARCHAR(30)
+cc: SMALLINT, NULL
+n_proprietari: TINYINT, NOT NULL
+prezzo: DECIMAL(8,2), NOT NULL
+potenza: SMALLINT, NOT NULL
+disponibilita: TINYINT(1), NOT NULL
